@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alumni Login</title>
+  <link rel="stylesheet" href="css/login.css" />
+</head>
+<body>
+
+  <!-- Login Form Container -->
+  <div class="login-container">
+    <h2 class="title">LOGIN PAGE</h2>
+
+    <form class="login-form" action="login.php" method="post">
+      <!-- Email -->
+      <label>Email</label>
+      <input type="email" placeholder="Enter your email" required />
+
+      <!-- Password -->
+      <label>Password</label>
+      <input type="password" placeholder="Enter your password" required />
+
+      <!-- Login Button -->
+      <button type="submit">Login</button>
+
+      <!-- Registration Link -->
+      <p class="register-link">Don't have an account? <a href="registration.html">Register here</a></p>
+    </form>
+  </div>
+
+  <!-- JavaScript -->
+  
+  <script>
+  document.querySelector(".login-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+    // Redirect to Add Job page after successful login
+    window.location.href = "add job.html";
+  });
+</script>
+
+
+</body>
+</html>

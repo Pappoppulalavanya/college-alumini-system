@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alumni Registration</title>
+  <link rel="stylesheet" href="css/registration.css"/>
+</head>
+<body>
+  <div class="form-container">
+    <h2 class="form-title">REGISTRATION PAGE</h2>
+    
+    <!-- ✅ Use POST method and point to register.php -->
+    <form class="registration-form" action="register.php" method="POST" enctype="multipart/form-data">
+      
+      <label>Fullname</label>
+      <input type="text" name="fullname" placeholder="enter your fullname" required>
+
+      <label>College ID</label>
+      <input type="text" name="college_id" placeholder="enter your college id number" required>
+
+      <label>Gender</label>
+      <select name="gender" required>
+        <option value="">Select Gender</option>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option>
+      </select>
+
+      <label>Batch</label>
+      <input type="text" name="batch" placeholder="enter your Batch">
+
+      <label>Graduated</label>
+      <select name="course">
+        <option value="">Select Course</option>
+        <option>B.Tech</option>
+        <option>M.Tech</option>
+        <option>MBA</option>
+        <option>Other</option>
+      </select>
+
+      <label>Currently Connected To</label>
+      <input type="text" name="company" placeholder="enter your companyname">
+
+      <label>Upload Pic</label>
+      <input type="file" name="profile_pic">
+
+      <label>Email</label>
+      <input type="email" name="email" placeholder="enter your emailid" required>
+
+      <label>Password</label>
+      <input type="password" name="password" placeholder="enter your password" required>
+
+      <button type="submit" class="btn-submit">Register</button>
+      <p class="signin-link">Already have an account? <a href="login.html">Login</a></p>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,243 @@
+/* Basic Resets and Body Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif; /* Or your preferred font */
+    background-color: #f4f7f6; /* Light background for the overall page */
+    display: flex;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 250px; /* Adjust as needed */
+    background-color: #2c3e50; /* Dark background for sidebar */
+    color: #ecf0f1;
+    padding: 20px 0;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    padding: 0 20px 20px 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    margin-bottom: 20px;
+}
+
+.user-profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+    border: 2px solid #3498db; /* A small border around the avatar */
+}
+
+.user-info .user-name {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.user-info .user-email {
+    margin: 0;
+    font-size: 0.85em;
+    color: #bdc3c7;
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav li {
+    margin-bottom: 5px;
+}
+
+.main-nav a {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.main-nav a i {
+    margin-right: 10px;
+    font-size: 1.1em;
+}
+
+.main-nav a:hover,
+.main-nav .active a {
+    background-color: #34495e; /* Slightly lighter on hover/active */
+    color: #3498db; /* Highlight color for active item */
+}
+
+/* Main Content Area */
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #ffffff;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.menu-toggle {
+    font-size: 1.5em;
+    color: #333;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.system-title {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+    flex-grow: 1; /* Pushes the user menu to the right */
+}
+
+.user-menu {
+    position: relative;
+}
+
+.user-dropdown {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.user-dropdown img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.user-dropdown span {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.user-dropdown i {
+    font-size: 0.8em;
+}
+
+/* Add Jobs Section */
+.add-jobs-section {
+    padding: 30px;
+    background-color: #f4f7f6; /* Background of the main content area */
+    flex-grow: 1;
+}
+
+.add-jobs-section h1 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: #333;
+    font-size: 1.8em;
+}
+
+.job-form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group textarea {
+    width: calc(100% - 20px); /* Account for padding */
+    padding: 12px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    background-color: #e8f0fe; /* Light blue background as seen in the image */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #3498db; /* Highlight on focus */
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+.form-group textarea {
+    resize: vertical; /* Allow vertical resizing */
+    min-height: 100px; /* Minimum height for description */
+}
+
+/* Specific styling for the Description field if needed (e.g., if it's wider) */
+.form-group.description-field {
+    /* If the description field needs more height, adjust min-height on textarea above */
+}
+
+/* You'll need to add media queries for responsiveness */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 60px; /* Collapse sidebar */
+        /* You'd also need JavaScript to toggle full sidebar */
+    }
+
+    .user-profile .user-info {
+        display: none; /* Hide text in collapsed sidebar */
+    }
+
+    .main-nav a span { /* Assuming you'd wrap text in span */
+        display: none;
+    }
+
+    .main-nav a {
+        justify-content: center; /* Center icons */
+    }
+
+    .system-title {
+        font-size: 1em;
+    }
+}
+
+/* Custom scrollbar styling (optional, browser specific) */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

@@ -1,0 +1,249 @@
+/* General Reset */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+
+/* Top Bar */
+.top-bar {
+  background: #00aaff;
+  color: white;
+  text-align: right;
+  padding: 5px 20px;
+  font-size: 14px;
+}
+
+/* Navigation Bar */
+nav.navbar {
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+nav h1 {
+  color: #333;
+  font-size: 22px;
+}
+nav h1 span {
+  color: #00aaff;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+.nav-links li a.active,
+.nav-links li a:hover {
+  color: #00aaff;
+}
+.btn {
+  background: #00aaff;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 90vh;
+  background-image: url('../images/alumini2.jpg'); /* ✅ Use relative path from css/ folder */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Dark transparent overlay */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-overlay h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero-overlay p {
+  font-size: 1.5rem;
+}
+
+
+
+/* Events Section */
+.events {
+  padding: 60px 20px;
+  text-align: center;
+  background: #fff;
+}
+.events h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+   
+}
+.events .subtitle {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 40px;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  
+}
+.card {
+  background: #fff;
+  width: 280px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: left;
+}
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.card h3 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+}
+.card p {
+  font-size: 14px;
+  color: #555;
+}
+
+
+/* Footer */
+footer {
+  background: #222;
+  color: white;
+  padding: 40px 20px 20px;
+}
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: auto;
+}
+.footer-about,
+.footer-contact,
+.footer-links {
+  flex: 1;
+  min-width: 220px;
+  margin-bottom: 20px;
+}
+.footer-about h3 span {
+  color: #00aaff;
+}
+.footer-about p {
+  font-size: 14px;
+  margin-top: 10px;
+}
+.social-icons a {
+  margin-right: 10px;
+}
+.footer-contact p,
+.footer-links ul {
+  font-size: 14px;
+  margin: 6px 0;
+}
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-links ul li a {
+  color: white;
+  text-decoration: none;
+}
+.footer-links ul li a:hover {
+  text-decoration: underline;
+}
+footer .copyright {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 13px;
+  color: #aaa;
+}
+
+/* Registration Form Styling */
+.form-container {
+  max-width: 500px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+  text-align: center;
+  color: red;
+  margin-bottom: 25px;
+}
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.registration-form label {
+  font-weight: bold;
+  color: #1a1aff;
+  margin-top: 15px;
+}
+
+.registration-form input,
+.registration-form select {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn-submit {
+  background-color: #28d17c;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  margin-top: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background-color: #24b76d;
+}
+
+.signin-link {
+  text-align: right;
+  margin-top: 15px;
+  color: salmon;
+}

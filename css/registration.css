@@ -1,0 +1,55 @@
+/* Registration Form Styling */
+.form-container {
+  max-width: 500px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+  text-align: center;
+  color: red;
+  margin-bottom: 25px;
+}
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.registration-form label {
+  font-weight: bold;
+  color: #1a1aff;
+  margin-top: 15px;
+}
+
+.registration-form input,
+.registration-form select {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn-submit {
+  background-color: #28d17c;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  margin-top: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background-color: #24b76d;
+}
+
+.signin-link {
+  text-align: right;
+  margin-top: 15px;
+  color: salmon;
+}
