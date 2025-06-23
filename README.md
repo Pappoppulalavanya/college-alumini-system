@@ -24,7 +24,7 @@ College Alumni System is a dynamic web-based platform designed to connect alumni
 
 ---
 
- Improvements (Planned)
+ Improvements 
 
 - • Add Admin Dashboard  
 - • Email notifications for job postings  
